@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="hii" max_length="40" name="x_58872_needit_hii" type="collection">
+        <element label="row1" max_length="200" name="row1" type="string_full_utf8"/>
+        <element label="row2" max_length="125" name="row2" type="string_full_utf8"/>
+        <element label="row3" max_length="500" name="row3" type="string_full_utf8"/>
+        <element label="row4" max_length="40" name="u_integer_1" type="integer"/>
+        <element attributes="encode_utf8=false" choice="3" default="legal" label="requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference">
+            <choice>
+                <element inactive_on_update="false" label="human resources" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="your department choice" sequence="3" value="your choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="request for" mandatory="true" max_length="40" name="u_request_for" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human resource" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="your department name" sequence="3" value="your choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="facilities" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="your department choice" sequence="3" value="your choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="l1" label="what needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="human1" sequence="0" value="h1"/>
+                <element inactive_on_update="false" label="human2" sequence="1" value="h2"/>
+                <element inactive_on_update="false" label="facilities1" sequence="2" value="f1"/>
+                <element inactive_on_update="false" label="facilities2" sequence="3" value="f2"/>
+                <element inactive_on_update="false" label="legal1" sequence="4" value="l1"/>
+                <element inactive_on_update="false" label="legal2" sequence="5" value="l2"/>
+                <element inactive_on_update="false" label="department1" sequence="6" value="d1"/>
+                <element inactive_on_update="false" label="department2" sequence="7" value="d2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_whenneeded" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="when needed" mandatory="true" max_length="40" name="u_when_needed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="hr1" label="when needed" mandatory="true" max_length="40" name="u_whwn_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="hr1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="hr2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="f1" sequence="2" value="f1"/>
+                <element inactive_on_update="false" label="f2" sequence="3" value="f2"/>
+                <element inactive_on_update="false" label="l1" sequence="4" value="l1"/>
+                <element inactive_on_update="false" label="l2" sequence="5" value="l2"/>
+                <element inactive_on_update="false" label="d1" sequence="6" value="d1"/>
+                <element inactive_on_update="false" label="d2" sequence="7" value="d2"/>
+            </choice>
+        </element>
+    </element>
+</database>
