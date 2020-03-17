@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="hii" max_length="40" name="x_58872_needit_hii" sizeclass="7" type="collection">
+    <element audit="true" extends="task" label="hii" max_length="40" name="x_58872_needit_hii" sizeclass="11" type="collection">
         <element label="row1" max_length="200" name="row1" type="string_full_utf8"/>
         <element label="row2" max_length="125" name="row2" type="string_full_utf8"/>
         <element label="row3" max_length="500" name="row3" type="string_full_utf8"/>
